@@ -7,70 +7,33 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="about-bg">
-
-  <!-- Login Overlay -->
-  <div id="login-overlay">
-    <div class="login-box">
-      <h2>Login</h2>
-      <form onsubmit="return loginUser(event)">
-        <div class="input-group">
-          <label for="username">Username</label>
-          <input type="text" id="username" placeholder="Enter username" required>
-        </div>
-        <div class="input-group">
-          <label for="password">Password</label>
-          <input type="password" id="password" placeholder="Enter password" required>
-        </div>
-        <button type="submit">Login</button>
-      </form>
-    </div>
-  </div>
-
-  <!-- Website Content (hidden until login) -->
-  <div id="site-content" style="display:none;">
-    <header>
-      <div class="container">
-        <section class="logo">
-          <b>VR</b>
-          <span class="dot2"></span>
-          <span class="dot"></span>
-          <span>HEADSET</span>
-        </section>
-        <nav>
-          <ul>
-            <li><a href="about.html">About us</a></li>
-            <li><a href="promotion.html">Promotion</a></li>
-            <li><a href="news.html">News</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-
-    <main class="page-content">
-      <h1>About Us</h1>
-        <p>
-          VR headsets are head-mounted, computer-generated, immersive devices that enable users to experience a simulated world by replacing their natural field of view. These systems utilize stereoscopic screens, advanced motion sensors (gyroscopes/accelerometers), and specialized lenses to deliver high-fidelity environments for gaming, training, education, and social experiences.
-        </p>
+  <header>
+    <div class="container">
+      <section class="logo">
+        <b>VR</b>
+        <span class="dot2"></span>
+        <span class="dot"></span>
+        <span>HEADSET</span>
       </section>
-    </main>
+      <nav>
+        <ul>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="promotion.html">Promotion</a></li>
+          <li><a href="news.html">News</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <!-- Footer pinned at bottom -->
-    <footer>
-      <p>&copy; 2026 VR HEADSET. All rights reserved.</p>
-    </footer>
-  </div>
+  <main class="page-content">
+    <h1>About Us</h1>
+ <p>VR headsets are head-mounted, computer-generated, immersive devices that enable users to experience a simulated world by replacing their natural field of view. These systems utilize stereoscopic screens, advanced motion sensors (gyroscopes/accelerometers), and specialized lenses to deliver high-fidelity environments for gaming, training, education, and social experiences.
+      </p>
+    </section>
+  </main>
 
-  <script>
-    function loginUser(event) {
-      event.preventDefault();
-      document.getElementById("login-overlay").style.display = "none";
-      // Show site content as flex column
-      const siteContent = document.getElementById("site-content");
-      siteContent.style.display = "flex";
-      siteContent.style.flexDirection = "column";
-      siteContent.style.minHeight = "100vh";
-      return false;
-    }
-  </script>
+  <footer>
+    <p>&copy; 2026 VR HEADSET. All rights reserved.</p>
+  </footer>
 </body>
 </html>
